@@ -37,7 +37,10 @@
 | in the URL cannot be matched to a valid route.
 |
 */
-
+$route['(:any)'] = 'runurl/index_run/$1';
+$route['verifyurl'] = "verifyurl"; 
+$route['urlslist/index_list'] = "urlslist/index_list"; 
+//$route['errorpage'] = "errorpage/index_error/$1";
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 

@@ -27,3 +27,5 @@ URL Shortener en Codeigniter
 
 - Statics -
 	Carpeta para contener todos los archivos estaticos, CSS, JS, IMAGES, etc.
+
+https://www.codeship.io/projects/f8b679d0-cf1d-0131-e147-1e6602fd86ce/status

@@ -1,7 +1,7 @@
 ci_shortener
 ============
 
-Update to Heroku URL Shortener en Codeigniter
+Update to  Heroku URL Shortener en Codeigniter
 
 - Controladores -
 	welcome : Controlador para Carga principal del formulario para captura de URL larga.

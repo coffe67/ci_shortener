@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteBase /
+RewriteBase /public/
 
 ### Canonicalize codeigniter URLs
 # Enforce www
@@ -12,7 +12,7 @@ RewriteBase /
 # If your default controller is something other than
 # "welcome" you should probably change this
 RewriteRule ^(home(/index)?|index(\.php)?)/?$ / [L,R=301]
-RewriteRule ^(.*)/index/?$ $1 [L,R=301]
+RewriteRule ^(.*public/)/index/?$ $1 [L,R=301]
 
 # Removes trailing slashes (prevents SEO duplicate content issues)
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -23,7 +23,7 @@ RewriteRule ^(.+)/$ $1 [L,R=301]
 # request to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^(.*)$ public/index.php/$1 [L]
 </IfModule>
 
 <IfModule mod_deflate.c>

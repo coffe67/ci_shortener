@@ -1,1 +1,5 @@
-{}
+{
+    "require": {
+        "licorice-labs/twigniter": "dev-master"
+    }
+}

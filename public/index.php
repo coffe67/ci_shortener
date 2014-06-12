@@ -18,7 +18,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -191,6 +191,8 @@ if (defined('ENVIRONMENT'))
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
 
+  // Path to the vendor folder for Composer
+    define('VENDORPATH', dirname(dirname(__FILE__)) . '/vendor/');
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
@@ -199,6 +201,9 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
+// init Composer autoloading
+require_once VENDORPATH.'autoload.php';
+
 require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */

@@ -56,7 +56,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = 'http://secret-atoll-4253.herokuapp.com/system';
+	$system_path = 'http://secret-atoll-4253.herokuapp.com/app/system';
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +72,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'http://secret-atoll-4253.herokuapp.com/application';
+	$application_folder = 'http://secret-atoll-4253.herokuapp.com/app/application';
 
 /*
  * --------------------------------------------------------------------
